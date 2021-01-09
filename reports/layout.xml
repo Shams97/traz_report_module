@@ -1,0 +1,80 @@
+<odoo>
+  <data>
+
+    <template id="report_assets_common_custom_fonts" name="Custom QWeb fonts" inherit_id="web.report_assets_common">
+      <xpath expr="." position="inside">
+        <link href="report_module/static/src/css/styles.css" rel="stylesheet" type="text/css"/>
+      </xpath>
+    </template>
+
+    <template inherit_id="web.external_layout_standard" id="custom_nuboogh_layout">
+      <xpath expr="//div[@t-att-style='report_header_style']//div[1]" position="replace">
+
+        <div class="row" style="width: 100%; margin-top:3px;">
+          <div class="col-4">
+            <h3> Al.Teraz.Al.sharqi</h3>
+          </div>
+
+          <div align="center" class="col-4" >
+            <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="min-height: 80px; max-height: 80px;" alt="Logo"/>
+            
+              <p>+9647714084345</p>
+          </div>
+
+          <div class="col-4">
+            <h3>الطراز الشرقي</h3>
+          </div>
+        </div>
+      </xpath>
+
+      <xpath expr="//div[@name='company_address']//.." position="replace">
+        <div class="row" >
+          <div class="col-4" style="margin-left:5px">
+            <p><img src="report_module/static/src/img/mail.png" style="width:8%; mx-height:8%"/> al_klati@yahoo.com</p>
+          </div>
+          <div class="col-4">
+            <p> <img src="report_module/static/src/img/instagram-logo.png" style="width:8%; mx-height:8%"/> shrkltrz </p>
+          </div>
+          <div class="col-4">
+              <p><img src="report_module/static/src/img/facebook.png" style="width:8%; mx-height:8%"/> شركة الطراز الشرقي </p>
+          </div>
+        </div>
+
+        <div align="center">
+          <p>بغداد - شارع السعدون - فرع سينما اطلس - مقابل فندق السفير </p>
+        </div>
+
+      </xpath>
+
+        
+
+      <!-- <xpath expr="//div[@name='financial_infos']//..//.." position="replace"/> -->
+
+
+      <xpath expr="div [@t-attf-class='footer o_standard_footer o_company_#{company.id}_layout']//div//ul" position="replace">
+          <div name="new_footer" style="border-top:solid black 1px; ">
+              <p align="center"> الخطأ والسهو مرجوع للطرفين - المباع لا يرجع ولا يبدل - يرجى التأكد من الاستلام البضاعة قبل المغادرة </p>
+          </div>
+        </xpath>  
+
+   
+    </template>
+     
+     <template inherit_id="custom_nuboogh_layout" id="new_footer_layout">
+         <xpath expr="//div[@name='new_footer']" position="before">
+           <div class="row" style="border:solid gray 1px; margin:5px;">
+            <div class="col-4 ml-8">
+            <p> بنقل المواد المدرجة اعلاه </p>
+            </div>
+            <div class="col-4">
+            <p>صاحب السيارة المرقمة  </p>
+            </div>
+            <div class="col-4">
+            <p> السائق  </p>
+            </div>
+         </div>
+      </xpath>
+    </template> 
+     
+  </data>
+</odoo>

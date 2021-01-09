@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+      <template id="traz_invoice_report" inherit_id="account.report_invoice_document">
+       <xpath expr="//div[@id='informations']//div[@name='origin']" position="after">
+          
+          <div class="col-auto mw-100 mb-2" t-if="o.warehouse_location_id.location_id">
+            <strong>
+            إسم المخزن:  
+            </strong>
+            <br/>
+            <p t-field="o.warehouse_location_id.location_id"></p>
+          </div>  
+
+          <div class="col-auto mw-100 mb-2" t-if="o.invoice_type">
+            <strong>
+            الوقت  
+            </strong>
+            <br/>
+            <p t-field="o.invoice_time"></p>
+          </div>
+          
+
+          <div class="col-auto mw-100 mb-2" t-if="o.invoice_type">
+            <strong>
+            نوع الفاتورة  
+            </strong>
+            <br/>
+            <p t-field="o.invoice_type"></p>
+          </div>
+            </xpath>
+
+            
+       <xpath expr="//div[@id='informations']" position="before">
+         
+         <div class="row" style="border-bottom:solid 1px gray">
+          <div class="col-auto mb-2" t-if="o.cus_name">
+            <strong>
+            اسم الزبون  
+            </strong>
+            
+            <p t-field="o.cus_name"></p>
+          </div>
+
+            <div class="col-auto mb-2" t-if="o.address">
+                      <strong>
+                        العنوان
+                      </strong>
+                      
+                      <p t-field="o.address"></p>
+                    </div>
+
+          
+            <div class="col-auto mb-2" t-if="o.phone_num">
+                      <strong>
+                       رقم الهاتف  
+                      </strong>
+                      
+                      <p t-field="o.phone_num"></p>
+                    </div>
+          </div>
+             </xpath>
+
+
+
+
+          <xpath expr="//div[@class='clearfix']//div[@id='total']//div//table[@class='table table-sm']" position="after">
+              <table class="table table-sm">
+              <tr class="border-black o_subtotal">
+              <td>
+              <strong>
+                الواصل   
+               </strong>
+              </td>
+                <td class="text-right">
+               <span t-field="o.recievable"/>
+               </td>
+              </tr>
+
+              <tr class="border-black o_subtotal">
+              <td>
+                <strong>
+                 المتبقي      
+              </strong>
+              </td>
+              
+              <td class="text-right">
+                <t t-set="total" t-value="o.amount_total - o.recievable"/>
+                <span t-esc="total"/>
+              </td>
+              </tr>
+              </table>
+
+              </xpath>
+
+          </template>
+
+
+
+         </data>
+      </odoo>
