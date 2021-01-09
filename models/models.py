@@ -6,8 +6,8 @@ from odoo import models, fields, api
 import datetime
 
 class report_module(models.Model):
-    _name = 'report_module.report_module'
-    _description = 'report_module.report_module'
+    _name = 'traz_report_module.traz_report_module'
+    _description = 'traz_report_module.traz_report_module'
 
 
 class AccountMoveExt(models.Model):

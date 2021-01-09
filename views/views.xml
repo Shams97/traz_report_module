@@ -74,11 +74,11 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="reportModule" id="report_module.menu_root"/>
+    <!-- <menuitem name="reportModule" id="traz_report_module.menu_root"/> -->
 
     <!-- menu categories -->
 
-    <menuitem name="Menu 1" id="report_module.menu_1" parent="report_module.menu_root"/>
+    <!-- <menuitem name="Menu 1" id="traz_report_module.menu_1" parent="traz_report_module.menu_root"/> -->
     <!-- <menuitem name="Menu 2" id="report_module.menu_2" parent="report_module.menu_root"/> -->
 
     <!-- actions -->
