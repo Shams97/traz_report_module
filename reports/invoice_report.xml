@@ -15,7 +15,7 @@
 
           <div class="col-auto mw-100 mb-2" t-if="o.invoice_type">
             <strong>
-            الوقت  
+            الوقت : 
             </strong>
             <br/>
             <p t-field="o.invoice_time"></p>
@@ -24,7 +24,7 @@
 
           <div class="col-auto mw-100 mb-2" t-if="o.invoice_type">
             <strong>
-            نوع الفاتورة  
+            نوع الفاتورة : 
             </strong>
             <br/>
             <p t-field="o.invoice_type"></p>
@@ -34,8 +34,8 @@
             
        <xpath expr="//div[@id='informations']" position="before">
          
-         <div class="row" style="border-bottom:solid 1px gray">
-          <div class="col-auto mb-2" t-if="o.cus_name">
+         <div class="row" style="border-bottom:solid 1px gray; margin-top:5px;" align="center">
+          <div class="col-auto" t-if="o.cus_name">
             <strong>
             اسم الزبون  
             </strong>

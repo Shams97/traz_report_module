@@ -3,7 +3,7 @@
 
     <template id="report_assets_common_custom_fonts" name="Custom QWeb fonts" inherit_id="web.report_assets_common">
       <xpath expr="." position="inside">
-        <link href="report_module/static/src/css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="traz_report_module/static/src/css/styles.css" rel="stylesheet" type="text/css"/>
       </xpath>
     </template>
 
@@ -25,18 +25,15 @@
             <h3>الطراز الشرقي</h3>
           </div>
         </div>
-      </xpath>
-
-      <xpath expr="//div[@name='company_address']//.." position="replace">
-        <div class="row" >
-          <div class="col-4" style="margin-left:5px">
-            <p><img src="report_module/static/src/img/mail.png" style="width:8%; mx-height:8%"/> al_klati@yahoo.com</p>
+ <div class="row" >
+          <div class="col-4">
+            <p><img src="traz_report_module/static/src/img/mail.png" style="width:8%; mx-height:8%"/> al_klati@yahoo.com</p>
           </div>
           <div class="col-4">
-            <p> <img src="report_module/static/src/img/instagram-logo.png" style="width:8%; mx-height:8%"/> shrkltrz </p>
+            <p> <img src="traz_report_module/static/src/img/instagram-logo.png" style="width:8%; mx-height:8%"/> shrkltrz </p>
           </div>
           <div class="col-4">
-              <p><img src="report_module/static/src/img/facebook.png" style="width:8%; mx-height:8%"/> شركة الطراز الشرقي </p>
+              <p><img src="traz_report_module/static/src/img/facebook.png" style="width:8%; mx-height:8%"/> شركة الطراز الشرقي </p>
           </div>
         </div>
 
@@ -45,6 +42,10 @@
         </div>
 
       </xpath>
+
+      <xpath expr="//div[@name='company_address']//.." position="replace"/>
+       
+      
 
         
 
