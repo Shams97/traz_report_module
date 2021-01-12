@@ -11,7 +11,7 @@
       <xpath expr="//div[@t-att-style='report_header_style']//div[1]" position="replace">
 
         <div class="row" style="width: 100%; margin-top:3px;">
-          <div class="col-4">
+          <div class="col-4" style="margin-left:20px;">
             <h3> Al.Teraz.Al.sharqi</h3>
           </div>
 
@@ -21,19 +21,20 @@
               <p>+9647714084345</p>
           </div>
 
-          <div class="col-4">
-            <h3>الطراز الشرقي</h3>
+          <div class="col-4" align="left">
+            <h3 align="right">الطراز الشرقي</h3>
           </div>
         </div>
- <div class="row" >
+      
+       <div class="row" >
           <div class="col-4">
-            <p><img src="traz_report_module/static/src/img/mail.png" style="width:8%; mx-height:8%"/> al_klati@yahoo.com</p>
+            <p align="center" style="margin-right:50px;" ><img src="traz_report_module/static/src/img/mail.png" style="width:8%;"/> al_klati@yahoo.com</p>
+          </div>
+          <div class="col-4" >
+            <p align="center" style="margin-right:13px;" > <img src="traz_report_module/static/src/img/instagram-logo.png" style="width:8%;"/> shrkltrz </p>
           </div>
           <div class="col-4">
-            <p> <img src="traz_report_module/static/src/img/instagram-logo.png" style="width:8%; mx-height:8%"/> shrkltrz </p>
-          </div>
-          <div class="col-4">
-              <p><img src="traz_report_module/static/src/img/facebook.png" style="width:8%; mx-height:8%"/> شركة الطراز الشرقي </p>
+              <p align="center" style="margin-left:50px;"><img src="traz_report_module/static/src/img/facebook.png" style="width:8%;"/> شركة الطراز الشرقي </p>
           </div>
         </div>
 
@@ -47,10 +48,7 @@
        
       
 
-        
-
-      <!-- <xpath expr="//div[@name='financial_infos']//..//.." position="replace"/> -->
-
+      
 
       <xpath expr="div [@t-attf-class='footer o_standard_footer o_company_#{company.id}_layout']//div//ul" position="replace">
           <div name="new_footer" style="border-top:solid black 1px; ">
