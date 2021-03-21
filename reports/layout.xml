@@ -11,7 +11,7 @@
       <xpath expr="//div[@t-att-style='report_header_style']//div[1]" position="replace">
 
         <div class="row" style="width: 100%; margin-top:3px;">
-          <div class="col-4" style="margin-left:20px;">
+          <div class="col-4" align="left">
             <h3> Al.Teraz.Al.sharqi</h3>
           </div>
 
@@ -21,7 +21,7 @@
               <p>+9647714084345</p>
           </div>
 
-          <div class="col-4" align="left">
+          <div class="col-4" align="right">
             <h3 align="right">الطراز الشرقي</h3>
           </div>
         </div>

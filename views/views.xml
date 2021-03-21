@@ -35,7 +35,6 @@
                  <field name="cus_name"/>
                  <field name="address"/>
                  <field name="phone_num"/>
-                 <!-- <field name="warehouse_location_id"/> -->
                 </xpath>
 
               </field>
