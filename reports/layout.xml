@@ -6,6 +6,9 @@
         <link href="traz_report_module/static/src/css/styles.css" rel="stylesheet" type="text/css"/>
       </xpath>
     </template>
+    
+    
+    
 
     <template inherit_id="web.external_layout_standard" id="custom_nuboogh_layout">
       <xpath expr="//div[@t-att-style='report_header_style']//div[1]" position="replace">
