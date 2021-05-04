@@ -65,7 +65,7 @@
 
 
 
-          <xpath expr="//div[@class='clearfix']//div[@id='total']//div//table[@class='table table-sm']" position="after">
+          <!-- <xpath expr="//div[@class='clearfix']//div[@id='total']//div//table[@class='table table-sm']" position="after">
               <table class="table table-sm">
               <tr class="border-black o_subtotal">
               <td>
@@ -92,9 +92,9 @@
               </tr>
               </table>
 
-              </xpath>
+              </xpath>-->
 
-          </template>
+          </template> 
 
 
 
